@@ -1,7 +1,6 @@
+import Modal, {Header, Body, Footer} from 'react-bootstrap/lib/Modal';
 import PropTypes from 'prop-types';
 import React from 'react';
-import jQuery from 'jquery';
-import Modal, {Header, Body, Footer} from 'react-bootstrap/lib/Modal';
 
 import {SelectAutocompleteField} from 'app/components/forms';
 import {t} from 'app/locale';
@@ -23,12 +22,12 @@ export default class CustomResolutionModal extends React.Component {
     this.state = {version: ''};
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (!prevProps.show && this.props.show) {
-      // XXX(cramer): this is incorrect but idgaf
-      jQuery('.modal').attr('tabindex', null);
-    }
-  }
+  handleSelectMount = ref => {
+    this.selectRef = ref;
+
+    if (!this.selectRef || typeof this.selectRef.focus !== 'function') return;
+    this.selectRef.focus();
+  };
 
   onSubmit = () => {
     this.props.onSelected({
@@ -63,7 +62,11 @@ export default class CustomResolutionModal extends React.Component {
                   label: (
                     <div>
                       <strong>
-                        <Version version={release.version} anchor={false} />
+                        <Version
+                          version={release.version}
+                          anchor={false}
+                          showShortVersion={false}
+                        />
                       </strong>
                       <br />
                       <small>

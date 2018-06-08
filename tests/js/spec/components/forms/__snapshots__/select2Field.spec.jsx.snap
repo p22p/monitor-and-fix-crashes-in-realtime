@@ -7,29 +7,26 @@ exports[`Select2Field render() renders with flat choices 1`] = `
   <div
     className="controls"
   >
-    <select
-      className="form-control"
+    <SelectControl
+      allowClear={false}
+      allowEmpty={false}
+      choices={
+        Array [
+          "a",
+          "b",
+          "c",
+        ]
+      }
       disabled={false}
+      escapeMarkup={true}
+      hideErrorMessage={false}
       id="id-fieldName"
       multiple={false}
-      onChange={[Function]}
+      name="fieldName"
       placeholder="--"
       required={false}
       value="fieldValue"
-    >
-      <option
-        key="a"
-        value="a"
-      />
-      <option
-        key="b"
-        value="b"
-      />
-      <option
-        key="c"
-        value="c"
-      />
-    </select>
+    />
   </div>
 </div>
 `;
@@ -41,12 +38,16 @@ exports[`Select2Field render() renders with form context 1`] = `
   <div
     className="controls"
   >
-    <select
-      className="form-control"
+    <SelectControl
+      allowClear={false}
+      allowEmpty={false}
+      choices={Array []}
       disabled={false}
+      escapeMarkup={true}
+      hideErrorMessage={false}
       id="id-fieldName"
       multiple={false}
-      onChange={[Function]}
+      name="fieldName"
       placeholder="--"
       required={false}
       value="fieldValue"
@@ -62,35 +63,35 @@ exports[`Select2Field render() renders with paired choices 1`] = `
   <div
     className="controls"
   >
-    <select
-      className="form-control"
+    <SelectControl
+      allowClear={false}
+      allowEmpty={false}
+      choices={
+        Array [
+          Array [
+            "a",
+            "abc",
+          ],
+          Array [
+            "b",
+            "bcd",
+          ],
+          Array [
+            "c",
+            "cde",
+          ],
+        ]
+      }
       disabled={false}
+      escapeMarkup={true}
+      hideErrorMessage={false}
       id="id-fieldName"
       multiple={false}
-      onChange={[Function]}
+      name="fieldName"
       placeholder="--"
       required={false}
       value="fieldValue"
-    >
-      <option
-        key="a"
-        value="a"
-      >
-        abc
-      </option>
-      <option
-        key="b"
-        value="b"
-      >
-        bcd
-      </option>
-      <option
-        key="c"
-        value="c"
-      >
-        cde
-      </option>
-    </select>
+    />
   </div>
 </div>
 `;
@@ -102,12 +103,16 @@ exports[`Select2Field render() renders without form context 1`] = `
   <div
     className="controls"
   >
-    <select
-      className="form-control"
+    <SelectControl
+      allowClear={false}
+      allowEmpty={false}
+      choices={Array []}
       disabled={false}
+      escapeMarkup={true}
+      hideErrorMessage={false}
       id="id-fieldName"
       multiple={false}
-      onChange={[Function]}
+      name="fieldName"
       placeholder="--"
       required={false}
       value=""

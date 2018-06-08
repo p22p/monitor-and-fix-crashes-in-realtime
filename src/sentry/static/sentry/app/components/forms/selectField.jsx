@@ -37,7 +37,7 @@ export default class SelectField extends FormField {
         disabled={disabled}
         required={required}
         value={this.state.value}
-        onChange={this.onChange.bind(this)}
+        onChange={this.onChange}
         clearable={this.props.clearable}
       />
     );

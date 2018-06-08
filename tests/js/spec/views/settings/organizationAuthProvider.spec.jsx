@@ -101,12 +101,7 @@ describe('OrganizationAuthProvider', function() {
         .find('input')
         .prop('checked')
     ).toBe(true);
-    expect(
-      wrapper
-        .find('Select2Field')
-        .find('select')
-        .prop('value')
-    ).toBe('admin');
+    expect(wrapper.find('SelectControl Select').prop('value')).toBe('admin');
   });
 
   it('can disable provider', function() {

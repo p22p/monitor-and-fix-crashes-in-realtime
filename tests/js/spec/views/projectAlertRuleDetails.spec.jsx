@@ -87,7 +87,7 @@ describe('ProjectAlertRuleDetails', function() {
     });
 
     it('sets defaults', function() {
-      let selects = wrapper.find('Select2Field');
+      let selects = wrapper.find('Select2Field Select');
       expect(selects.first().props().value).toBe('all');
       expect(selects.last().props().value).toBe(30);
     });
@@ -153,10 +153,13 @@ describe('ProjectAlertRuleDetails', function() {
     });
 
     it('sends correct environment value', function() {
-      wrapper
-        .find('select#id-environment')
-        .simulate('change', {target: {value: 'production'}});
-      expect(wrapper.find('select#id-environment').props().value).toBe('production');
+      wrapper.find('Select2Field[name="environment"] Select').prop('onChange')(
+        'production'
+      );
+      wrapper.update();
+      expect(wrapper.find('Select2Field[name="environment"] Select').prop('value')).toBe(
+        'production'
+      );
       wrapper.find('form').simulate('submit');
 
       expect(mock).toHaveBeenCalledWith(
@@ -168,15 +171,18 @@ describe('ProjectAlertRuleDetails', function() {
     });
 
     it('strips environment value if "All environments" is selected', function() {
-      wrapper
-        .find('select#id-environment')
-        .simulate('change', {target: {value: '__all_environments__'}});
+      wrapper.find('Select2Field[name="environment"] Select').prop('onChange')(
+        '__all_environments__'
+      );
+      wrapper.update();
       wrapper.find('form').simulate('submit');
 
-      expect(mock).not.toHaveBeenCalledWith(
+      expect(mock).toHaveBeenCalledWith(
         endpoint,
         expect.objectContaining({
-          data: expect.objectContaining({environment: '__all_environments__'}),
+          data: expect.objectContaining({
+            environment: null,
+          }),
         })
       );
     });
