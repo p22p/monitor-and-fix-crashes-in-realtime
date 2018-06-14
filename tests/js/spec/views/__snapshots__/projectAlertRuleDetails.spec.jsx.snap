@@ -269,9 +269,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                         className="css-1pc4igl-AlertRuleRow elb7f1e0"
                       >
                         Every time 
-                        <Select2Field
-                          allowClear={false}
-                          allowEmpty={false}
+                        <SelectField
                           choices={
                             Array [
                               Array [
@@ -289,14 +287,12 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                             ]
                           }
                           className=""
+                          clearable={false}
                           disabled={false}
-                          escapeMarkup={true}
                           hideErrorMessage={false}
                           key="1"
-                          multiple={false}
                           name="actionMatch"
                           onChange={[Function]}
-                          placeholder="--"
                           required={true}
                           style={
                             Object {
@@ -308,7 +304,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           }
                         >
                           <div
-                            className="control-group required"
+                            className="required"
                             style={
                               Object {
                                 "marginBottom": 0,
@@ -322,8 +318,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                               className="controls"
                             >
                               <SelectControl
-                                allowClear={false}
-                                allowEmpty={false}
                                 choices={
                                   Array [
                                     Array [
@@ -340,52 +334,18 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                     ],
                                   ]
                                 }
-                                className=""
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-actionMatch"
-                                multiple={false}
-                                name="actionMatch"
                                 onChange={[Function]}
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                    "width": 100,
-                                  }
-                                }
+                                value=""
                               >
                                 <StyledSelect
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "all",
-                                        "all",
-                                      ],
-                                      Array [
-                                        "any",
-                                        "any",
-                                      ],
-                                      Array [
-                                        "none",
-                                        "none",
-                                      ],
-                                    ]
-                                  }
-                                  className=""
+                                  clearable={false}
                                   disabled={false}
-                                  escapeMarkup={true}
-                                  hideErrorMessage={false}
                                   id="id-actionMatch"
-                                  multiple={false}
-                                  name="actionMatch"
                                   onChange={[Function]}
                                   options={
                                     Array [
@@ -403,44 +363,15 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                       },
                                     ]
                                   }
-                                  placeholder="--"
                                   required={true}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                      "width": 100,
-                                    }
-                                  }
+                                  value=""
                                 >
                                   <SelectPicker
-                                    allowClear={false}
-                                    allowEmpty={false}
                                     arrowRenderer={[Function]}
-                                    choices={
-                                      Array [
-                                        Array [
-                                          "all",
-                                          "all",
-                                        ],
-                                        Array [
-                                          "any",
-                                          "any",
-                                        ],
-                                        Array [
-                                          "none",
-                                          "none",
-                                        ],
-                                      ]
-                                    }
                                     className="css-16280ey-StyledSelect eho28m20"
+                                    clearable={false}
                                     disabled={false}
-                                    escapeMarkup={true}
-                                    hideErrorMessage={false}
                                     id="id-actionMatch"
-                                    multiple={false}
-                                    name="actionMatch"
                                     onChange={[Function]}
                                     options={
                                       Array [
@@ -458,53 +389,25 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                         },
                                       ]
                                     }
-                                    placeholder="--"
                                     required={true}
-                                    style={
-                                      Object {
-                                        "marginBottom": 0,
-                                        "marginLeft": 5,
-                                        "marginRight": 5,
-                                        "width": 100,
-                                      }
-                                    }
+                                    value=""
                                   >
                                     <Select
-                                      allowClear={false}
-                                      allowEmpty={false}
                                       arrowRenderer={[Function]}
                                       autosize={true}
                                       backspaceRemoves={true}
                                       backspaceToRemoveMessage="Press backspace to remove {label}"
-                                      choices={
-                                        Array [
-                                          Array [
-                                            "all",
-                                            "all",
-                                          ],
-                                          Array [
-                                            "any",
-                                            "any",
-                                          ],
-                                          Array [
-                                            "none",
-                                            "none",
-                                          ],
-                                        ]
-                                      }
                                       className="css-16280ey-StyledSelect eho28m20"
                                       clearAllText="Clear all"
                                       clearRenderer={[Function]}
                                       clearValueText="Clear value"
-                                      clearable={true}
+                                      clearable={false}
                                       closeOnSelect={true}
                                       deleteRemoves={true}
                                       delimiter=","
                                       disabled={false}
                                       escapeClearsValue={true}
-                                      escapeMarkup={true}
                                       filterOptions={[Function]}
-                                      hideErrorMessage={false}
                                       id="id-actionMatch"
                                       ignoreAccents={true}
                                       ignoreCase={true}
@@ -517,8 +420,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                       menuBuffer={0}
                                       menuRenderer={[Function]}
                                       multi={false}
-                                      multiple={false}
-                                      name="actionMatch"
                                       noResultsText="No results found"
                                       onBlurResetsInput={true}
                                       onChange={[Function]}
@@ -543,28 +444,21 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                         ]
                                       }
                                       pageSize={5}
-                                      placeholder="--"
+                                      placeholder="Select..."
                                       removeSelected={true}
                                       required={true}
                                       rtl={false}
                                       scrollMenuIntoView={true}
                                       searchable={true}
                                       simpleValue={false}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                          "width": 100,
-                                        }
-                                      }
                                       tabSelectsValue={true}
                                       trimFilter={true}
+                                      value=""
                                       valueComponent={[Function]}
                                       valueKey="value"
                                     >
                                       <div
-                                        className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                        className="Select css-16280ey-StyledSelect eho28m20 is-searchable Select--single"
                                       >
                                         <div
                                           className="Select-control"
@@ -573,26 +467,18 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                           onTouchEnd={[Function]}
                                           onTouchMove={[Function]}
                                           onTouchStart={[Function]}
-                                          style={
-                                            Object {
-                                              "marginBottom": 0,
-                                              "marginLeft": 5,
-                                              "marginRight": 5,
-                                              "width": 100,
-                                            }
-                                          }
                                         >
                                           <span
                                             className="Select-multi-value-wrapper"
-                                            id="react-select-14--value"
+                                            id="react-select-22--value"
                                           >
                                             <div
                                               className="Select-placeholder"
                                             >
-                                              --
+                                              Select...
                                             </div>
                                             <AutosizeInput
-                                              aria-activedescendant="react-select-14--value"
+                                              aria-activedescendant="react-select-22--value"
                                               aria-expanded="false"
                                               aria-haspopup="false"
                                               aria-owns=""
@@ -616,7 +502,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                                 }
                                               >
                                                 <input
-                                                  aria-activedescendant="react-select-14--value"
+                                                  aria-activedescendant="react-select-22--value"
                                                   aria-expanded="false"
                                                   aria-haspopup="false"
                                                   aria-owns=""
@@ -666,7 +552,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                               </SelectControl>
                             </div>
                           </div>
-                        </Select2Field>
+                        </SelectField>
                          of these conditions are met:
                       </h6>
                     </AlertRuleRow>
@@ -813,44 +699,213 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           </div>
                         </RuleNodes>
                         <fieldset>
-                          <SelectInput
-                            disabled={false}
-                            multiple={false}
+                          <SelectControl
                             onChange={[Function]}
-                            placeholder="Select an option..."
-                            required={false}
-                            showSearch={true}
+                            options={
+                              Array [
+                                Object {
+                                  "label": "An event is seen",
+                                  "value": "sentry.rules.conditions.1",
+                                },
+                              ]
+                            }
                             style={
                               Object {
                                 "width": "100%",
                               }
                             }
-                            value=""
                           >
-                            <select
-                              disabled={false}
-                              multiple={false}
+                            <StyledSelect
+                              arrowRenderer={[Function]}
                               onChange={[Function]}
-                              placeholder="Select an option..."
-                              required={false}
+                              options={
+                                Array [
+                                  Object {
+                                    "label": "An event is seen",
+                                    "value": "sentry.rules.conditions.1",
+                                  },
+                                ]
+                              }
                               style={
                                 Object {
                                   "width": "100%",
                                 }
                               }
-                              value=""
                             >
-                              <option
-                                key="blank"
-                              />
-                              <option
-                                key="sentry.rules.conditions.1"
-                                value="sentry.rules.conditions.1"
+                              <SelectPicker
+                                arrowRenderer={[Function]}
+                                className="css-16280ey-StyledSelect eho28m20"
+                                onChange={[Function]}
+                                options={
+                                  Array [
+                                    Object {
+                                      "label": "An event is seen",
+                                      "value": "sentry.rules.conditions.1",
+                                    },
+                                  ]
+                                }
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
                               >
-                                An event is seen
-                              </option>
-                            </select>
-                          </SelectInput>
+                                <Select
+                                  arrowRenderer={[Function]}
+                                  autosize={true}
+                                  backspaceRemoves={true}
+                                  backspaceToRemoveMessage="Press backspace to remove {label}"
+                                  className="css-16280ey-StyledSelect eho28m20"
+                                  clearAllText="Clear all"
+                                  clearRenderer={[Function]}
+                                  clearValueText="Clear value"
+                                  clearable={true}
+                                  closeOnSelect={true}
+                                  deleteRemoves={true}
+                                  delimiter=","
+                                  disabled={false}
+                                  escapeClearsValue={true}
+                                  filterOptions={[Function]}
+                                  ignoreAccents={true}
+                                  ignoreCase={true}
+                                  inputProps={Object {}}
+                                  isLoading={false}
+                                  joinValues={false}
+                                  labelKey="label"
+                                  matchPos="any"
+                                  matchProp="any"
+                                  menuBuffer={0}
+                                  menuRenderer={[Function]}
+                                  multi={false}
+                                  noResultsText="No results found"
+                                  onBlurResetsInput={true}
+                                  onChange={[Function]}
+                                  onCloseResetsInput={true}
+                                  onSelectResetsInput={true}
+                                  openOnClick={true}
+                                  optionComponent={[Function]}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "An event is seen",
+                                        "value": "sentry.rules.conditions.1",
+                                      },
+                                    ]
+                                  }
+                                  pageSize={5}
+                                  placeholder="Select..."
+                                  removeSelected={true}
+                                  required={false}
+                                  rtl={false}
+                                  scrollMenuIntoView={true}
+                                  searchable={true}
+                                  simpleValue={false}
+                                  style={
+                                    Object {
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabSelectsValue={true}
+                                  trimFilter={true}
+                                  valueComponent={[Function]}
+                                  valueKey="value"
+                                >
+                                  <div
+                                    className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                  >
+                                    <div
+                                      className="Select-control"
+                                      onKeyDown={[Function]}
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "100%",
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="Select-multi-value-wrapper"
+                                        id="react-select-23--value"
+                                      >
+                                        <div
+                                          className="Select-placeholder"
+                                        >
+                                          Select...
+                                        </div>
+                                        <AutosizeInput
+                                          aria-activedescendant="react-select-23--value"
+                                          aria-expanded="false"
+                                          aria-haspopup="false"
+                                          aria-owns=""
+                                          className="Select-input"
+                                          injectStyles={true}
+                                          minWidth="5"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          role="combobox"
+                                          value=""
+                                        >
+                                          <div
+                                            className="Select-input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-activedescendant="react-select-23--value"
+                                              aria-expanded="false"
+                                              aria-haspopup="false"
+                                              aria-owns=""
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              required={false}
+                                              role="combobox"
+                                              style={
+                                                Object {
+                                                  "boxSizing": "content-box",
+                                                  "width": "5px",
+                                                }
+                                              }
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </span>
+                                      <span
+                                        className="Select-arrow-zone"
+                                        onMouseDown={[Function]}
+                                      >
+                                        <span
+                                          className="icon-arrow-down"
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </Select>
+                              </SelectPicker>
+                            </StyledSelect>
+                          </SelectControl>
                         </fieldset>
                       </div>
                     </RuleNodeList>
@@ -859,9 +914,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                       In this environment
                       :
                     </h6>
-                    <Select2Field
-                      allowClear={false}
-                      allowEmpty={false}
+                    <SelectField
                       choices={
                         Array [
                           Array [
@@ -879,13 +932,11 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                         ]
                       }
                       className=""
+                      clearable={false}
                       disabled={false}
-                      escapeMarkup={true}
                       hideErrorMessage={false}
-                      multiple={false}
                       name="environment"
                       onChange={[Function]}
-                      placeholder="--"
                       required={true}
                       style={
                         Object {
@@ -897,7 +948,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                       value="staging"
                     >
                       <div
-                        className="control-group required"
+                        className="required"
                         style={
                           Object {
                             "marginBottom": 0,
@@ -910,8 +961,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           className="controls"
                         >
                           <SelectControl
-                            allowClear={false}
-                            allowEmpty={false}
                             choices={
                               Array [
                                 Array [
@@ -928,52 +977,18 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                 ],
                               ]
                             }
-                            className=""
+                            clearable={false}
                             disabled={false}
-                            escapeMarkup={true}
-                            hideErrorMessage={false}
                             id="id-environment"
-                            multiple={false}
-                            name="environment"
                             onChange={[Function]}
-                            placeholder="--"
                             required={true}
-                            style={
-                              Object {
-                                "marginBottom": 0,
-                                "marginLeft": 5,
-                                "marginRight": 5,
-                              }
-                            }
                             value="staging"
                           >
                             <StyledSelect
-                              allowClear={false}
-                              allowEmpty={false}
                               arrowRenderer={[Function]}
-                              choices={
-                                Array [
-                                  Array [
-                                    "__all_environments__",
-                                    "All Environments",
-                                  ],
-                                  Array [
-                                    "production",
-                                    "Production",
-                                  ],
-                                  Array [
-                                    "staging",
-                                    "Staging",
-                                  ],
-                                ]
-                              }
-                              className=""
+                              clearable={false}
                               disabled={false}
-                              escapeMarkup={true}
-                              hideErrorMessage={false}
                               id="id-environment"
-                              multiple={false}
-                              name="environment"
                               onChange={[Function]}
                               options={
                                 Array [
@@ -991,44 +1006,15 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                   },
                                 ]
                               }
-                              placeholder="--"
                               required={true}
-                              style={
-                                Object {
-                                  "marginBottom": 0,
-                                  "marginLeft": 5,
-                                  "marginRight": 5,
-                                }
-                              }
                               value="staging"
                             >
                               <SelectPicker
-                                allowClear={false}
-                                allowEmpty={false}
                                 arrowRenderer={[Function]}
-                                choices={
-                                  Array [
-                                    Array [
-                                      "__all_environments__",
-                                      "All Environments",
-                                    ],
-                                    Array [
-                                      "production",
-                                      "Production",
-                                    ],
-                                    Array [
-                                      "staging",
-                                      "Staging",
-                                    ],
-                                  ]
-                                }
                                 className="css-16280ey-StyledSelect eho28m20"
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-environment"
-                                multiple={false}
-                                name="environment"
                                 onChange={[Function]}
                                 options={
                                   Array [
@@ -1046,53 +1032,25 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                     },
                                   ]
                                 }
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                  }
-                                }
                                 value="staging"
                               >
                                 <Select
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
                                   autosize={true}
                                   backspaceRemoves={true}
                                   backspaceToRemoveMessage="Press backspace to remove {label}"
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "__all_environments__",
-                                        "All Environments",
-                                      ],
-                                      Array [
-                                        "production",
-                                        "Production",
-                                      ],
-                                      Array [
-                                        "staging",
-                                        "Staging",
-                                      ],
-                                    ]
-                                  }
                                   className="css-16280ey-StyledSelect eho28m20"
                                   clearAllText="Clear all"
                                   clearRenderer={[Function]}
                                   clearValueText="Clear value"
-                                  clearable={true}
+                                  clearable={false}
                                   closeOnSelect={true}
                                   deleteRemoves={true}
                                   delimiter=","
                                   disabled={false}
                                   escapeClearsValue={true}
-                                  escapeMarkup={true}
                                   filterOptions={[Function]}
-                                  hideErrorMessage={false}
                                   id="id-environment"
                                   ignoreAccents={true}
                                   ignoreCase={true}
@@ -1105,8 +1063,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                   menuBuffer={0}
                                   menuRenderer={[Function]}
                                   multi={false}
-                                  multiple={false}
-                                  name="environment"
                                   noResultsText="No results found"
                                   onBlurResetsInput={true}
                                   onChange={[Function]}
@@ -1131,20 +1087,13 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                     ]
                                   }
                                   pageSize={5}
-                                  placeholder="--"
+                                  placeholder="Select..."
                                   removeSelected={true}
                                   required={true}
                                   rtl={false}
                                   scrollMenuIntoView={true}
                                   searchable={true}
                                   simpleValue={false}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                    }
-                                  }
                                   tabSelectsValue={true}
                                   trimFilter={true}
                                   value="staging"
@@ -1152,15 +1101,8 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                   valueKey="value"
                                 >
                                   <div
-                                    className="Select css-16280ey-StyledSelect eho28m20 has-value is-clearable is-searchable Select--single"
+                                    className="Select css-16280ey-StyledSelect eho28m20 has-value is-searchable Select--single"
                                   >
-                                    <input
-                                      disabled={false}
-                                      key="hidden.0"
-                                      name="environment"
-                                      type="hidden"
-                                      value="staging"
-                                    />
                                     <div
                                       className="Select-control"
                                       onKeyDown={[Function]}
@@ -1168,24 +1110,17 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                       onTouchEnd={[Function]}
                                       onTouchMove={[Function]}
                                       onTouchStart={[Function]}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                        }
-                                      }
                                     >
                                       <span
                                         className="Select-multi-value-wrapper"
-                                        id="react-select-15--value"
+                                        id="react-select-24--value"
                                       >
                                         <Value
                                           disabled={false}
-                                          id="react-select-15--value-item"
-                                          instancePrefix="react-select-15-"
+                                          id="react-select-24--value-item"
+                                          instancePrefix="react-select-24-"
                                           onClick={null}
-                                          placeholder="--"
+                                          placeholder="Select..."
                                           value={
                                             Object {
                                               "label": "Staging",
@@ -1199,7 +1134,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                             <span
                                               aria-selected="true"
                                               className="Select-value-label"
-                                              id="react-select-15--value-item"
+                                              id="react-select-24--value-item"
                                               role="option"
                                             >
                                               Staging
@@ -1207,7 +1142,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                           </div>
                                         </Value>
                                         <AutosizeInput
-                                          aria-activedescendant="react-select-15--value"
+                                          aria-activedescendant="react-select-24--value"
                                           aria-expanded="false"
                                           aria-haspopup="false"
                                           aria-owns=""
@@ -1231,7 +1166,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                             }
                                           >
                                             <input
-                                              aria-activedescendant="react-select-15--value"
+                                              aria-activedescendant="react-select-24--value"
                                               aria-expanded="false"
                                               aria-haspopup="false"
                                               aria-owns=""
@@ -1266,24 +1201,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                         </AutosizeInput>
                                       </span>
                                       <span
-                                        aria-label="Clear value"
-                                        className="Select-clear-zone"
-                                        onMouseDown={[Function]}
-                                        onTouchEnd={[Function]}
-                                        onTouchMove={[Function]}
-                                        onTouchStart={[Function]}
-                                        title="Clear value"
-                                      >
-                                        <span
-                                          className="Select-clear"
-                                          dangerouslySetInnerHTML={
-                                            Object {
-                                              "__html": "&times;",
-                                            }
-                                          }
-                                        />
-                                      </span>
-                                      <span
                                         className="Select-arrow-zone"
                                         onMouseDown={[Function]}
                                       >
@@ -1299,7 +1216,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           </SelectControl>
                         </div>
                       </div>
-                    </Select2Field>
+                    </SelectField>
                     <hr />
                     <h6>
                       Take these actions:
@@ -1444,44 +1361,213 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           </div>
                         </RuleNodes>
                         <fieldset>
-                          <SelectInput
-                            disabled={false}
-                            multiple={false}
+                          <SelectControl
                             onChange={[Function]}
-                            placeholder="Select an option..."
-                            required={false}
-                            showSearch={true}
+                            options={
+                              Array [
+                                Object {
+                                  "label": "Send a notification for all services",
+                                  "value": "sentry.rules.actions.notify1",
+                                },
+                              ]
+                            }
                             style={
                               Object {
                                 "width": "100%",
                               }
                             }
-                            value=""
                           >
-                            <select
-                              disabled={false}
-                              multiple={false}
+                            <StyledSelect
+                              arrowRenderer={[Function]}
                               onChange={[Function]}
-                              placeholder="Select an option..."
-                              required={false}
+                              options={
+                                Array [
+                                  Object {
+                                    "label": "Send a notification for all services",
+                                    "value": "sentry.rules.actions.notify1",
+                                  },
+                                ]
+                              }
                               style={
                                 Object {
                                   "width": "100%",
                                 }
                               }
-                              value=""
                             >
-                              <option
-                                key="blank"
-                              />
-                              <option
-                                key="sentry.rules.actions.notify1"
-                                value="sentry.rules.actions.notify1"
+                              <SelectPicker
+                                arrowRenderer={[Function]}
+                                className="css-16280ey-StyledSelect eho28m20"
+                                onChange={[Function]}
+                                options={
+                                  Array [
+                                    Object {
+                                      "label": "Send a notification for all services",
+                                      "value": "sentry.rules.actions.notify1",
+                                    },
+                                  ]
+                                }
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
                               >
-                                Send a notification for all services
-                              </option>
-                            </select>
-                          </SelectInput>
+                                <Select
+                                  arrowRenderer={[Function]}
+                                  autosize={true}
+                                  backspaceRemoves={true}
+                                  backspaceToRemoveMessage="Press backspace to remove {label}"
+                                  className="css-16280ey-StyledSelect eho28m20"
+                                  clearAllText="Clear all"
+                                  clearRenderer={[Function]}
+                                  clearValueText="Clear value"
+                                  clearable={true}
+                                  closeOnSelect={true}
+                                  deleteRemoves={true}
+                                  delimiter=","
+                                  disabled={false}
+                                  escapeClearsValue={true}
+                                  filterOptions={[Function]}
+                                  ignoreAccents={true}
+                                  ignoreCase={true}
+                                  inputProps={Object {}}
+                                  isLoading={false}
+                                  joinValues={false}
+                                  labelKey="label"
+                                  matchPos="any"
+                                  matchProp="any"
+                                  menuBuffer={0}
+                                  menuRenderer={[Function]}
+                                  multi={false}
+                                  noResultsText="No results found"
+                                  onBlurResetsInput={true}
+                                  onChange={[Function]}
+                                  onCloseResetsInput={true}
+                                  onSelectResetsInput={true}
+                                  openOnClick={true}
+                                  optionComponent={[Function]}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "Send a notification for all services",
+                                        "value": "sentry.rules.actions.notify1",
+                                      },
+                                    ]
+                                  }
+                                  pageSize={5}
+                                  placeholder="Select..."
+                                  removeSelected={true}
+                                  required={false}
+                                  rtl={false}
+                                  scrollMenuIntoView={true}
+                                  searchable={true}
+                                  simpleValue={false}
+                                  style={
+                                    Object {
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabSelectsValue={true}
+                                  trimFilter={true}
+                                  valueComponent={[Function]}
+                                  valueKey="value"
+                                >
+                                  <div
+                                    className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                  >
+                                    <div
+                                      className="Select-control"
+                                      onKeyDown={[Function]}
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "100%",
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="Select-multi-value-wrapper"
+                                        id="react-select-25--value"
+                                      >
+                                        <div
+                                          className="Select-placeholder"
+                                        >
+                                          Select...
+                                        </div>
+                                        <AutosizeInput
+                                          aria-activedescendant="react-select-25--value"
+                                          aria-expanded="false"
+                                          aria-haspopup="false"
+                                          aria-owns=""
+                                          className="Select-input"
+                                          injectStyles={true}
+                                          minWidth="5"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          role="combobox"
+                                          value=""
+                                        >
+                                          <div
+                                            className="Select-input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-activedescendant="react-select-25--value"
+                                              aria-expanded="false"
+                                              aria-haspopup="false"
+                                              aria-owns=""
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              required={false}
+                                              role="combobox"
+                                              style={
+                                                Object {
+                                                  "boxSizing": "content-box",
+                                                  "width": "5px",
+                                                }
+                                              }
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </span>
+                                      <span
+                                        className="Select-arrow-zone"
+                                        onMouseDown={[Function]}
+                                      >
+                                        <span
+                                          className="icon-arrow-down"
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </Select>
+                              </SelectPicker>
+                            </StyledSelect>
+                          </SelectControl>
                         </fieldset>
                       </div>
                     </RuleNodeList>
@@ -1491,9 +1577,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                         className="css-1pc4igl-AlertRuleRow elb7f1e0"
                       >
                         Perform these actions at most once every 
-                        <Select2Field
-                          allowClear={false}
-                          allowEmpty={false}
+                        <SelectField
                           choices={
                             Array [
                               Array [
@@ -1535,14 +1619,12 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                             ]
                           }
                           className=""
+                          clearable={false}
                           disabled={false}
-                          escapeMarkup={true}
                           hideErrorMessage={false}
                           key="1"
-                          multiple={false}
                           name="frequency"
                           onChange={[Function]}
-                          placeholder="--"
                           required={true}
                           style={
                             Object {
@@ -1554,7 +1636,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                           }
                         >
                           <div
-                            className="control-group required"
+                            className="required"
                             style={
                               Object {
                                 "marginBottom": 0,
@@ -1568,8 +1650,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                               className="controls"
                             >
                               <SelectControl
-                                allowClear={false}
-                                allowEmpty={false}
                                 choices={
                                   Array [
                                     Array [
@@ -1610,76 +1690,18 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                     ],
                                   ]
                                 }
-                                className=""
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-frequency"
-                                multiple={false}
-                                name="frequency"
                                 onChange={[Function]}
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                    "width": 140,
-                                  }
-                                }
+                                value=""
                               >
                                 <StyledSelect
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "5",
-                                        "5 minutes",
-                                      ],
-                                      Array [
-                                        "10",
-                                        "10 minutes",
-                                      ],
-                                      Array [
-                                        "30",
-                                        "30 minutes",
-                                      ],
-                                      Array [
-                                        "60",
-                                        "60 minutes",
-                                      ],
-                                      Array [
-                                        "180",
-                                        "3 hours",
-                                      ],
-                                      Array [
-                                        "720",
-                                        "12 hours",
-                                      ],
-                                      Array [
-                                        "1440",
-                                        "24 hours",
-                                      ],
-                                      Array [
-                                        "10080",
-                                        "one week",
-                                      ],
-                                      Array [
-                                        "43200",
-                                        "30 days",
-                                      ],
-                                    ]
-                                  }
-                                  className=""
+                                  clearable={false}
                                   disabled={false}
-                                  escapeMarkup={true}
-                                  hideErrorMessage={false}
                                   id="id-frequency"
-                                  multiple={false}
-                                  name="frequency"
                                   onChange={[Function]}
                                   options={
                                     Array [
@@ -1721,68 +1743,15 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                       },
                                     ]
                                   }
-                                  placeholder="--"
                                   required={true}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                      "width": 140,
-                                    }
-                                  }
+                                  value=""
                                 >
                                   <SelectPicker
-                                    allowClear={false}
-                                    allowEmpty={false}
                                     arrowRenderer={[Function]}
-                                    choices={
-                                      Array [
-                                        Array [
-                                          "5",
-                                          "5 minutes",
-                                        ],
-                                        Array [
-                                          "10",
-                                          "10 minutes",
-                                        ],
-                                        Array [
-                                          "30",
-                                          "30 minutes",
-                                        ],
-                                        Array [
-                                          "60",
-                                          "60 minutes",
-                                        ],
-                                        Array [
-                                          "180",
-                                          "3 hours",
-                                        ],
-                                        Array [
-                                          "720",
-                                          "12 hours",
-                                        ],
-                                        Array [
-                                          "1440",
-                                          "24 hours",
-                                        ],
-                                        Array [
-                                          "10080",
-                                          "one week",
-                                        ],
-                                        Array [
-                                          "43200",
-                                          "30 days",
-                                        ],
-                                      ]
-                                    }
                                     className="css-16280ey-StyledSelect eho28m20"
+                                    clearable={false}
                                     disabled={false}
-                                    escapeMarkup={true}
-                                    hideErrorMessage={false}
                                     id="id-frequency"
-                                    multiple={false}
-                                    name="frequency"
                                     onChange={[Function]}
                                     options={
                                       Array [
@@ -1824,77 +1793,25 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                         },
                                       ]
                                     }
-                                    placeholder="--"
                                     required={true}
-                                    style={
-                                      Object {
-                                        "marginBottom": 0,
-                                        "marginLeft": 5,
-                                        "marginRight": 5,
-                                        "width": 140,
-                                      }
-                                    }
+                                    value=""
                                   >
                                     <Select
-                                      allowClear={false}
-                                      allowEmpty={false}
                                       arrowRenderer={[Function]}
                                       autosize={true}
                                       backspaceRemoves={true}
                                       backspaceToRemoveMessage="Press backspace to remove {label}"
-                                      choices={
-                                        Array [
-                                          Array [
-                                            "5",
-                                            "5 minutes",
-                                          ],
-                                          Array [
-                                            "10",
-                                            "10 minutes",
-                                          ],
-                                          Array [
-                                            "30",
-                                            "30 minutes",
-                                          ],
-                                          Array [
-                                            "60",
-                                            "60 minutes",
-                                          ],
-                                          Array [
-                                            "180",
-                                            "3 hours",
-                                          ],
-                                          Array [
-                                            "720",
-                                            "12 hours",
-                                          ],
-                                          Array [
-                                            "1440",
-                                            "24 hours",
-                                          ],
-                                          Array [
-                                            "10080",
-                                            "one week",
-                                          ],
-                                          Array [
-                                            "43200",
-                                            "30 days",
-                                          ],
-                                        ]
-                                      }
                                       className="css-16280ey-StyledSelect eho28m20"
                                       clearAllText="Clear all"
                                       clearRenderer={[Function]}
                                       clearValueText="Clear value"
-                                      clearable={true}
+                                      clearable={false}
                                       closeOnSelect={true}
                                       deleteRemoves={true}
                                       delimiter=","
                                       disabled={false}
                                       escapeClearsValue={true}
-                                      escapeMarkup={true}
                                       filterOptions={[Function]}
-                                      hideErrorMessage={false}
                                       id="id-frequency"
                                       ignoreAccents={true}
                                       ignoreCase={true}
@@ -1907,8 +1824,6 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                       menuBuffer={0}
                                       menuRenderer={[Function]}
                                       multi={false}
-                                      multiple={false}
-                                      name="frequency"
                                       noResultsText="No results found"
                                       onBlurResetsInput={true}
                                       onChange={[Function]}
@@ -1957,28 +1872,21 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                         ]
                                       }
                                       pageSize={5}
-                                      placeholder="--"
+                                      placeholder="Select..."
                                       removeSelected={true}
                                       required={true}
                                       rtl={false}
                                       scrollMenuIntoView={true}
                                       searchable={true}
                                       simpleValue={false}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                          "width": 140,
-                                        }
-                                      }
                                       tabSelectsValue={true}
                                       trimFilter={true}
+                                      value=""
                                       valueComponent={[Function]}
                                       valueKey="value"
                                     >
                                       <div
-                                        className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                        className="Select css-16280ey-StyledSelect eho28m20 is-searchable Select--single"
                                       >
                                         <div
                                           className="Select-control"
@@ -1987,26 +1895,18 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                           onTouchEnd={[Function]}
                                           onTouchMove={[Function]}
                                           onTouchStart={[Function]}
-                                          style={
-                                            Object {
-                                              "marginBottom": 0,
-                                              "marginLeft": 5,
-                                              "marginRight": 5,
-                                              "width": 140,
-                                            }
-                                          }
                                         >
                                           <span
                                             className="Select-multi-value-wrapper"
-                                            id="react-select-16--value"
+                                            id="react-select-26--value"
                                           >
                                             <div
                                               className="Select-placeholder"
                                             >
-                                              --
+                                              Select...
                                             </div>
                                             <AutosizeInput
-                                              aria-activedescendant="react-select-16--value"
+                                              aria-activedescendant="react-select-26--value"
                                               aria-expanded="false"
                                               aria-haspopup="false"
                                               aria-owns=""
@@ -2030,7 +1930,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                                                 }
                                               >
                                                 <input
-                                                  aria-activedescendant="react-select-16--value"
+                                                  aria-activedescendant="react-select-26--value"
                                                   aria-expanded="false"
                                                   aria-haspopup="false"
                                                   aria-owns=""
@@ -2080,7 +1980,7 @@ exports[`ProjectAlertRuleDetails Edit alert rule renders 1`] = `
                               </SelectControl>
                             </div>
                           </div>
-                        </Select2Field>
+                        </SelectField>
                          for an issue.
                       </h6>
                     </AlertRuleRow>
@@ -2492,9 +2392,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                         className="css-1pc4igl-AlertRuleRow elb7f1e0"
                       >
                         Every time 
-                        <Select2Field
-                          allowClear={false}
-                          allowEmpty={false}
+                        <SelectField
                           choices={
                             Array [
                               Array [
@@ -2512,14 +2410,12 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                             ]
                           }
                           className=""
+                          clearable={false}
                           disabled={false}
-                          escapeMarkup={true}
                           hideErrorMessage={false}
                           key="1"
-                          multiple={false}
                           name="actionMatch"
                           onChange={[Function]}
-                          placeholder="--"
                           required={true}
                           style={
                             Object {
@@ -2532,7 +2428,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           value="all"
                         >
                           <div
-                            className="control-group required"
+                            className="required"
                             style={
                               Object {
                                 "marginBottom": 0,
@@ -2546,8 +2442,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                               className="controls"
                             >
                               <SelectControl
-                                allowClear={false}
-                                allowEmpty={false}
                                 choices={
                                   Array [
                                     Array [
@@ -2564,53 +2458,18 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                     ],
                                   ]
                                 }
-                                className=""
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-actionMatch"
-                                multiple={false}
-                                name="actionMatch"
                                 onChange={[Function]}
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                    "width": 100,
-                                  }
-                                }
                                 value="all"
                               >
                                 <StyledSelect
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "all",
-                                        "all",
-                                      ],
-                                      Array [
-                                        "any",
-                                        "any",
-                                      ],
-                                      Array [
-                                        "none",
-                                        "none",
-                                      ],
-                                    ]
-                                  }
-                                  className=""
+                                  clearable={false}
                                   disabled={false}
-                                  escapeMarkup={true}
-                                  hideErrorMessage={false}
                                   id="id-actionMatch"
-                                  multiple={false}
-                                  name="actionMatch"
                                   onChange={[Function]}
                                   options={
                                     Array [
@@ -2628,45 +2487,15 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       },
                                     ]
                                   }
-                                  placeholder="--"
                                   required={true}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                      "width": 100,
-                                    }
-                                  }
                                   value="all"
                                 >
                                   <SelectPicker
-                                    allowClear={false}
-                                    allowEmpty={false}
                                     arrowRenderer={[Function]}
-                                    choices={
-                                      Array [
-                                        Array [
-                                          "all",
-                                          "all",
-                                        ],
-                                        Array [
-                                          "any",
-                                          "any",
-                                        ],
-                                        Array [
-                                          "none",
-                                          "none",
-                                        ],
-                                      ]
-                                    }
                                     className="css-16280ey-StyledSelect eho28m20"
+                                    clearable={false}
                                     disabled={false}
-                                    escapeMarkup={true}
-                                    hideErrorMessage={false}
                                     id="id-actionMatch"
-                                    multiple={false}
-                                    name="actionMatch"
                                     onChange={[Function]}
                                     options={
                                       Array [
@@ -2684,54 +2513,25 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                         },
                                       ]
                                     }
-                                    placeholder="--"
                                     required={true}
-                                    style={
-                                      Object {
-                                        "marginBottom": 0,
-                                        "marginLeft": 5,
-                                        "marginRight": 5,
-                                        "width": 100,
-                                      }
-                                    }
                                     value="all"
                                   >
                                     <Select
-                                      allowClear={false}
-                                      allowEmpty={false}
                                       arrowRenderer={[Function]}
                                       autosize={true}
                                       backspaceRemoves={true}
                                       backspaceToRemoveMessage="Press backspace to remove {label}"
-                                      choices={
-                                        Array [
-                                          Array [
-                                            "all",
-                                            "all",
-                                          ],
-                                          Array [
-                                            "any",
-                                            "any",
-                                          ],
-                                          Array [
-                                            "none",
-                                            "none",
-                                          ],
-                                        ]
-                                      }
                                       className="css-16280ey-StyledSelect eho28m20"
                                       clearAllText="Clear all"
                                       clearRenderer={[Function]}
                                       clearValueText="Clear value"
-                                      clearable={true}
+                                      clearable={false}
                                       closeOnSelect={true}
                                       deleteRemoves={true}
                                       delimiter=","
                                       disabled={false}
                                       escapeClearsValue={true}
-                                      escapeMarkup={true}
                                       filterOptions={[Function]}
-                                      hideErrorMessage={false}
                                       id="id-actionMatch"
                                       ignoreAccents={true}
                                       ignoreCase={true}
@@ -2744,8 +2544,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       menuBuffer={0}
                                       menuRenderer={[Function]}
                                       multi={false}
-                                      multiple={false}
-                                      name="actionMatch"
                                       noResultsText="No results found"
                                       onBlurResetsInput={true}
                                       onChange={[Function]}
@@ -2770,21 +2568,13 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                         ]
                                       }
                                       pageSize={5}
-                                      placeholder="--"
+                                      placeholder="Select..."
                                       removeSelected={true}
                                       required={true}
                                       rtl={false}
                                       scrollMenuIntoView={true}
                                       searchable={true}
                                       simpleValue={false}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                          "width": 100,
-                                        }
-                                      }
                                       tabSelectsValue={true}
                                       trimFilter={true}
                                       value="all"
@@ -2792,15 +2582,8 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       valueKey="value"
                                     >
                                       <div
-                                        className="Select css-16280ey-StyledSelect eho28m20 has-value is-clearable is-searchable Select--single"
+                                        className="Select css-16280ey-StyledSelect eho28m20 has-value is-searchable Select--single"
                                       >
-                                        <input
-                                          disabled={false}
-                                          key="hidden.0"
-                                          name="actionMatch"
-                                          type="hidden"
-                                          value="all"
-                                        />
                                         <div
                                           className="Select-control"
                                           onKeyDown={[Function]}
@@ -2808,14 +2591,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                           onTouchEnd={[Function]}
                                           onTouchMove={[Function]}
                                           onTouchStart={[Function]}
-                                          style={
-                                            Object {
-                                              "marginBottom": 0,
-                                              "marginLeft": 5,
-                                              "marginRight": 5,
-                                              "width": 100,
-                                            }
-                                          }
                                         >
                                           <span
                                             className="Select-multi-value-wrapper"
@@ -2826,7 +2601,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                               id="react-select-2--value-item"
                                               instancePrefix="react-select-2-"
                                               onClick={null}
-                                              placeholder="--"
+                                              placeholder="Select..."
                                               value={
                                                 Object {
                                                   "label": "all",
@@ -2907,24 +2682,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                             </AutosizeInput>
                                           </span>
                                           <span
-                                            aria-label="Clear value"
-                                            className="Select-clear-zone"
-                                            onMouseDown={[Function]}
-                                            onTouchEnd={[Function]}
-                                            onTouchMove={[Function]}
-                                            onTouchStart={[Function]}
-                                            title="Clear value"
-                                          >
-                                            <span
-                                              className="Select-clear"
-                                              dangerouslySetInnerHTML={
-                                                Object {
-                                                  "__html": "&times;",
-                                                }
-                                              }
-                                            />
-                                          </span>
-                                          <span
                                             className="Select-arrow-zone"
                                             onMouseDown={[Function]}
                                           >
@@ -2940,7 +2697,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                               </SelectControl>
                             </div>
                           </div>
-                        </Select2Field>
+                        </SelectField>
                          of these conditions are met:
                       </h6>
                     </AlertRuleRow>
@@ -2969,44 +2726,213 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           />
                         </RuleNodes>
                         <fieldset>
-                          <SelectInput
-                            disabled={false}
-                            multiple={false}
+                          <SelectControl
                             onChange={[Function]}
-                            placeholder="Select an option..."
-                            required={false}
-                            showSearch={true}
+                            options={
+                              Array [
+                                Object {
+                                  "label": "An event is seen",
+                                  "value": "sentry.rules.conditions.1",
+                                },
+                              ]
+                            }
                             style={
                               Object {
                                 "width": "100%",
                               }
                             }
-                            value=""
                           >
-                            <select
-                              disabled={false}
-                              multiple={false}
+                            <StyledSelect
+                              arrowRenderer={[Function]}
                               onChange={[Function]}
-                              placeholder="Select an option..."
-                              required={false}
+                              options={
+                                Array [
+                                  Object {
+                                    "label": "An event is seen",
+                                    "value": "sentry.rules.conditions.1",
+                                  },
+                                ]
+                              }
                               style={
                                 Object {
                                   "width": "100%",
                                 }
                               }
-                              value=""
                             >
-                              <option
-                                key="blank"
-                              />
-                              <option
-                                key="sentry.rules.conditions.1"
-                                value="sentry.rules.conditions.1"
+                              <SelectPicker
+                                arrowRenderer={[Function]}
+                                className="css-16280ey-StyledSelect eho28m20"
+                                onChange={[Function]}
+                                options={
+                                  Array [
+                                    Object {
+                                      "label": "An event is seen",
+                                      "value": "sentry.rules.conditions.1",
+                                    },
+                                  ]
+                                }
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
                               >
-                                An event is seen
-                              </option>
-                            </select>
-                          </SelectInput>
+                                <Select
+                                  arrowRenderer={[Function]}
+                                  autosize={true}
+                                  backspaceRemoves={true}
+                                  backspaceToRemoveMessage="Press backspace to remove {label}"
+                                  className="css-16280ey-StyledSelect eho28m20"
+                                  clearAllText="Clear all"
+                                  clearRenderer={[Function]}
+                                  clearValueText="Clear value"
+                                  clearable={true}
+                                  closeOnSelect={true}
+                                  deleteRemoves={true}
+                                  delimiter=","
+                                  disabled={false}
+                                  escapeClearsValue={true}
+                                  filterOptions={[Function]}
+                                  ignoreAccents={true}
+                                  ignoreCase={true}
+                                  inputProps={Object {}}
+                                  isLoading={false}
+                                  joinValues={false}
+                                  labelKey="label"
+                                  matchPos="any"
+                                  matchProp="any"
+                                  menuBuffer={0}
+                                  menuRenderer={[Function]}
+                                  multi={false}
+                                  noResultsText="No results found"
+                                  onBlurResetsInput={true}
+                                  onChange={[Function]}
+                                  onCloseResetsInput={true}
+                                  onSelectResetsInput={true}
+                                  openOnClick={true}
+                                  optionComponent={[Function]}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "An event is seen",
+                                        "value": "sentry.rules.conditions.1",
+                                      },
+                                    ]
+                                  }
+                                  pageSize={5}
+                                  placeholder="Select..."
+                                  removeSelected={true}
+                                  required={false}
+                                  rtl={false}
+                                  scrollMenuIntoView={true}
+                                  searchable={true}
+                                  simpleValue={false}
+                                  style={
+                                    Object {
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabSelectsValue={true}
+                                  trimFilter={true}
+                                  valueComponent={[Function]}
+                                  valueKey="value"
+                                >
+                                  <div
+                                    className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                  >
+                                    <div
+                                      className="Select-control"
+                                      onKeyDown={[Function]}
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "100%",
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="Select-multi-value-wrapper"
+                                        id="react-select-3--value"
+                                      >
+                                        <div
+                                          className="Select-placeholder"
+                                        >
+                                          Select...
+                                        </div>
+                                        <AutosizeInput
+                                          aria-activedescendant="react-select-3--value"
+                                          aria-expanded="false"
+                                          aria-haspopup="false"
+                                          aria-owns=""
+                                          className="Select-input"
+                                          injectStyles={true}
+                                          minWidth="5"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          role="combobox"
+                                          value=""
+                                        >
+                                          <div
+                                            className="Select-input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-activedescendant="react-select-3--value"
+                                              aria-expanded="false"
+                                              aria-haspopup="false"
+                                              aria-owns=""
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              required={false}
+                                              role="combobox"
+                                              style={
+                                                Object {
+                                                  "boxSizing": "content-box",
+                                                  "width": "5px",
+                                                }
+                                              }
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </span>
+                                      <span
+                                        className="Select-arrow-zone"
+                                        onMouseDown={[Function]}
+                                      >
+                                        <span
+                                          className="icon-arrow-down"
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </Select>
+                              </SelectPicker>
+                            </StyledSelect>
+                          </SelectControl>
                         </fieldset>
                       </div>
                     </RuleNodeList>
@@ -3015,9 +2941,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                       In this environment
                       :
                     </h6>
-                    <Select2Field
-                      allowClear={false}
-                      allowEmpty={false}
+                    <SelectField
                       choices={
                         Array [
                           Array [
@@ -3035,13 +2959,11 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                         ]
                       }
                       className=""
+                      clearable={false}
                       disabled={false}
-                      escapeMarkup={true}
                       hideErrorMessage={false}
-                      multiple={false}
                       name="environment"
                       onChange={[Function]}
-                      placeholder="--"
                       required={true}
                       style={
                         Object {
@@ -3053,7 +2975,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                       value="__all_environments__"
                     >
                       <div
-                        className="control-group required"
+                        className="required"
                         style={
                           Object {
                             "marginBottom": 0,
@@ -3066,8 +2988,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           className="controls"
                         >
                           <SelectControl
-                            allowClear={false}
-                            allowEmpty={false}
                             choices={
                               Array [
                                 Array [
@@ -3084,52 +3004,18 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                 ],
                               ]
                             }
-                            className=""
+                            clearable={false}
                             disabled={false}
-                            escapeMarkup={true}
-                            hideErrorMessage={false}
                             id="id-environment"
-                            multiple={false}
-                            name="environment"
                             onChange={[Function]}
-                            placeholder="--"
                             required={true}
-                            style={
-                              Object {
-                                "marginBottom": 0,
-                                "marginLeft": 5,
-                                "marginRight": 5,
-                              }
-                            }
                             value="__all_environments__"
                           >
                             <StyledSelect
-                              allowClear={false}
-                              allowEmpty={false}
                               arrowRenderer={[Function]}
-                              choices={
-                                Array [
-                                  Array [
-                                    "__all_environments__",
-                                    "All Environments",
-                                  ],
-                                  Array [
-                                    "production",
-                                    "Production",
-                                  ],
-                                  Array [
-                                    "staging",
-                                    "Staging",
-                                  ],
-                                ]
-                              }
-                              className=""
+                              clearable={false}
                               disabled={false}
-                              escapeMarkup={true}
-                              hideErrorMessage={false}
                               id="id-environment"
-                              multiple={false}
-                              name="environment"
                               onChange={[Function]}
                               options={
                                 Array [
@@ -3147,44 +3033,15 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                   },
                                 ]
                               }
-                              placeholder="--"
                               required={true}
-                              style={
-                                Object {
-                                  "marginBottom": 0,
-                                  "marginLeft": 5,
-                                  "marginRight": 5,
-                                }
-                              }
                               value="__all_environments__"
                             >
                               <SelectPicker
-                                allowClear={false}
-                                allowEmpty={false}
                                 arrowRenderer={[Function]}
-                                choices={
-                                  Array [
-                                    Array [
-                                      "__all_environments__",
-                                      "All Environments",
-                                    ],
-                                    Array [
-                                      "production",
-                                      "Production",
-                                    ],
-                                    Array [
-                                      "staging",
-                                      "Staging",
-                                    ],
-                                  ]
-                                }
                                 className="css-16280ey-StyledSelect eho28m20"
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-environment"
-                                multiple={false}
-                                name="environment"
                                 onChange={[Function]}
                                 options={
                                   Array [
@@ -3202,53 +3059,25 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                     },
                                   ]
                                 }
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                  }
-                                }
                                 value="__all_environments__"
                               >
                                 <Select
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
                                   autosize={true}
                                   backspaceRemoves={true}
                                   backspaceToRemoveMessage="Press backspace to remove {label}"
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "__all_environments__",
-                                        "All Environments",
-                                      ],
-                                      Array [
-                                        "production",
-                                        "Production",
-                                      ],
-                                      Array [
-                                        "staging",
-                                        "Staging",
-                                      ],
-                                    ]
-                                  }
                                   className="css-16280ey-StyledSelect eho28m20"
                                   clearAllText="Clear all"
                                   clearRenderer={[Function]}
                                   clearValueText="Clear value"
-                                  clearable={true}
+                                  clearable={false}
                                   closeOnSelect={true}
                                   deleteRemoves={true}
                                   delimiter=","
                                   disabled={false}
                                   escapeClearsValue={true}
-                                  escapeMarkup={true}
                                   filterOptions={[Function]}
-                                  hideErrorMessage={false}
                                   id="id-environment"
                                   ignoreAccents={true}
                                   ignoreCase={true}
@@ -3261,8 +3090,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                   menuBuffer={0}
                                   menuRenderer={[Function]}
                                   multi={false}
-                                  multiple={false}
-                                  name="environment"
                                   noResultsText="No results found"
                                   onBlurResetsInput={true}
                                   onChange={[Function]}
@@ -3287,20 +3114,13 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                     ]
                                   }
                                   pageSize={5}
-                                  placeholder="--"
+                                  placeholder="Select..."
                                   removeSelected={true}
                                   required={true}
                                   rtl={false}
                                   scrollMenuIntoView={true}
                                   searchable={true}
                                   simpleValue={false}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                    }
-                                  }
                                   tabSelectsValue={true}
                                   trimFilter={true}
                                   value="__all_environments__"
@@ -3308,15 +3128,8 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                   valueKey="value"
                                 >
                                   <div
-                                    className="Select css-16280ey-StyledSelect eho28m20 has-value is-clearable is-searchable Select--single"
+                                    className="Select css-16280ey-StyledSelect eho28m20 has-value is-searchable Select--single"
                                   >
-                                    <input
-                                      disabled={false}
-                                      key="hidden.0"
-                                      name="environment"
-                                      type="hidden"
-                                      value="__all_environments__"
-                                    />
                                     <div
                                       className="Select-control"
                                       onKeyDown={[Function]}
@@ -3324,24 +3137,17 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       onTouchEnd={[Function]}
                                       onTouchMove={[Function]}
                                       onTouchStart={[Function]}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                        }
-                                      }
                                     >
                                       <span
                                         className="Select-multi-value-wrapper"
-                                        id="react-select-3--value"
+                                        id="react-select-4--value"
                                       >
                                         <Value
                                           disabled={false}
-                                          id="react-select-3--value-item"
-                                          instancePrefix="react-select-3-"
+                                          id="react-select-4--value-item"
+                                          instancePrefix="react-select-4-"
                                           onClick={null}
-                                          placeholder="--"
+                                          placeholder="Select..."
                                           value={
                                             Object {
                                               "label": "All Environments",
@@ -3355,7 +3161,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                             <span
                                               aria-selected="true"
                                               className="Select-value-label"
-                                              id="react-select-3--value-item"
+                                              id="react-select-4--value-item"
                                               role="option"
                                             >
                                               All Environments
@@ -3363,7 +3169,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                           </div>
                                         </Value>
                                         <AutosizeInput
-                                          aria-activedescendant="react-select-3--value"
+                                          aria-activedescendant="react-select-4--value"
                                           aria-expanded="false"
                                           aria-haspopup="false"
                                           aria-owns=""
@@ -3387,7 +3193,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                             }
                                           >
                                             <input
-                                              aria-activedescendant="react-select-3--value"
+                                              aria-activedescendant="react-select-4--value"
                                               aria-expanded="false"
                                               aria-haspopup="false"
                                               aria-owns=""
@@ -3422,24 +3228,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                         </AutosizeInput>
                                       </span>
                                       <span
-                                        aria-label="Clear value"
-                                        className="Select-clear-zone"
-                                        onMouseDown={[Function]}
-                                        onTouchEnd={[Function]}
-                                        onTouchMove={[Function]}
-                                        onTouchStart={[Function]}
-                                        title="Clear value"
-                                      >
-                                        <span
-                                          className="Select-clear"
-                                          dangerouslySetInnerHTML={
-                                            Object {
-                                              "__html": "&times;",
-                                            }
-                                          }
-                                        />
-                                      </span>
-                                      <span
                                         className="Select-arrow-zone"
                                         onMouseDown={[Function]}
                                       >
@@ -3455,7 +3243,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           </SelectControl>
                         </div>
                       </div>
-                    </Select2Field>
+                    </SelectField>
                     <hr />
                     <h6>
                       Take these actions:
@@ -3482,44 +3270,213 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           />
                         </RuleNodes>
                         <fieldset>
-                          <SelectInput
-                            disabled={false}
-                            multiple={false}
+                          <SelectControl
                             onChange={[Function]}
-                            placeholder="Select an option..."
-                            required={false}
-                            showSearch={true}
+                            options={
+                              Array [
+                                Object {
+                                  "label": "Send a notification for all services",
+                                  "value": "sentry.rules.actions.notify1",
+                                },
+                              ]
+                            }
                             style={
                               Object {
                                 "width": "100%",
                               }
                             }
-                            value=""
                           >
-                            <select
-                              disabled={false}
-                              multiple={false}
+                            <StyledSelect
+                              arrowRenderer={[Function]}
                               onChange={[Function]}
-                              placeholder="Select an option..."
-                              required={false}
+                              options={
+                                Array [
+                                  Object {
+                                    "label": "Send a notification for all services",
+                                    "value": "sentry.rules.actions.notify1",
+                                  },
+                                ]
+                              }
                               style={
                                 Object {
                                   "width": "100%",
                                 }
                               }
-                              value=""
                             >
-                              <option
-                                key="blank"
-                              />
-                              <option
-                                key="sentry.rules.actions.notify1"
-                                value="sentry.rules.actions.notify1"
+                              <SelectPicker
+                                arrowRenderer={[Function]}
+                                className="css-16280ey-StyledSelect eho28m20"
+                                onChange={[Function]}
+                                options={
+                                  Array [
+                                    Object {
+                                      "label": "Send a notification for all services",
+                                      "value": "sentry.rules.actions.notify1",
+                                    },
+                                  ]
+                                }
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
                               >
-                                Send a notification for all services
-                              </option>
-                            </select>
-                          </SelectInput>
+                                <Select
+                                  arrowRenderer={[Function]}
+                                  autosize={true}
+                                  backspaceRemoves={true}
+                                  backspaceToRemoveMessage="Press backspace to remove {label}"
+                                  className="css-16280ey-StyledSelect eho28m20"
+                                  clearAllText="Clear all"
+                                  clearRenderer={[Function]}
+                                  clearValueText="Clear value"
+                                  clearable={true}
+                                  closeOnSelect={true}
+                                  deleteRemoves={true}
+                                  delimiter=","
+                                  disabled={false}
+                                  escapeClearsValue={true}
+                                  filterOptions={[Function]}
+                                  ignoreAccents={true}
+                                  ignoreCase={true}
+                                  inputProps={Object {}}
+                                  isLoading={false}
+                                  joinValues={false}
+                                  labelKey="label"
+                                  matchPos="any"
+                                  matchProp="any"
+                                  menuBuffer={0}
+                                  menuRenderer={[Function]}
+                                  multi={false}
+                                  noResultsText="No results found"
+                                  onBlurResetsInput={true}
+                                  onChange={[Function]}
+                                  onCloseResetsInput={true}
+                                  onSelectResetsInput={true}
+                                  openOnClick={true}
+                                  optionComponent={[Function]}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "Send a notification for all services",
+                                        "value": "sentry.rules.actions.notify1",
+                                      },
+                                    ]
+                                  }
+                                  pageSize={5}
+                                  placeholder="Select..."
+                                  removeSelected={true}
+                                  required={false}
+                                  rtl={false}
+                                  scrollMenuIntoView={true}
+                                  searchable={true}
+                                  simpleValue={false}
+                                  style={
+                                    Object {
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabSelectsValue={true}
+                                  trimFilter={true}
+                                  valueComponent={[Function]}
+                                  valueKey="value"
+                                >
+                                  <div
+                                    className="Select css-16280ey-StyledSelect eho28m20 is-clearable is-searchable Select--single"
+                                  >
+                                    <div
+                                      className="Select-control"
+                                      onKeyDown={[Function]}
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "100%",
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="Select-multi-value-wrapper"
+                                        id="react-select-5--value"
+                                      >
+                                        <div
+                                          className="Select-placeholder"
+                                        >
+                                          Select...
+                                        </div>
+                                        <AutosizeInput
+                                          aria-activedescendant="react-select-5--value"
+                                          aria-expanded="false"
+                                          aria-haspopup="false"
+                                          aria-owns=""
+                                          className="Select-input"
+                                          injectStyles={true}
+                                          minWidth="5"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          role="combobox"
+                                          value=""
+                                        >
+                                          <div
+                                            className="Select-input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-activedescendant="react-select-5--value"
+                                              aria-expanded="false"
+                                              aria-haspopup="false"
+                                              aria-owns=""
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              required={false}
+                                              role="combobox"
+                                              style={
+                                                Object {
+                                                  "boxSizing": "content-box",
+                                                  "width": "5px",
+                                                }
+                                              }
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </span>
+                                      <span
+                                        className="Select-arrow-zone"
+                                        onMouseDown={[Function]}
+                                      >
+                                        <span
+                                          className="icon-arrow-down"
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </Select>
+                              </SelectPicker>
+                            </StyledSelect>
+                          </SelectControl>
                         </fieldset>
                       </div>
                     </RuleNodeList>
@@ -3529,9 +3486,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                         className="css-1pc4igl-AlertRuleRow elb7f1e0"
                       >
                         Perform these actions at most once every 
-                        <Select2Field
-                          allowClear={false}
-                          allowEmpty={false}
+                        <SelectField
                           choices={
                             Array [
                               Array [
@@ -3573,14 +3528,12 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                             ]
                           }
                           className=""
+                          clearable={false}
                           disabled={false}
-                          escapeMarkup={true}
                           hideErrorMessage={false}
                           key="1"
-                          multiple={false}
                           name="frequency"
                           onChange={[Function]}
-                          placeholder="--"
                           required={true}
                           style={
                             Object {
@@ -3593,7 +3546,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                           value={30}
                         >
                           <div
-                            className="control-group required"
+                            className="required"
                             style={
                               Object {
                                 "marginBottom": 0,
@@ -3607,8 +3560,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                               className="controls"
                             >
                               <SelectControl
-                                allowClear={false}
-                                allowEmpty={false}
                                 choices={
                                   Array [
                                     Array [
@@ -3649,77 +3600,18 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                     ],
                                   ]
                                 }
-                                className=""
+                                clearable={false}
                                 disabled={false}
-                                escapeMarkup={true}
-                                hideErrorMessage={false}
                                 id="id-frequency"
-                                multiple={false}
-                                name="frequency"
                                 onChange={[Function]}
-                                placeholder="--"
                                 required={true}
-                                style={
-                                  Object {
-                                    "marginBottom": 0,
-                                    "marginLeft": 5,
-                                    "marginRight": 5,
-                                    "width": 140,
-                                  }
-                                }
                                 value={30}
                               >
                                 <StyledSelect
-                                  allowClear={false}
-                                  allowEmpty={false}
                                   arrowRenderer={[Function]}
-                                  choices={
-                                    Array [
-                                      Array [
-                                        "5",
-                                        "5 minutes",
-                                      ],
-                                      Array [
-                                        "10",
-                                        "10 minutes",
-                                      ],
-                                      Array [
-                                        "30",
-                                        "30 minutes",
-                                      ],
-                                      Array [
-                                        "60",
-                                        "60 minutes",
-                                      ],
-                                      Array [
-                                        "180",
-                                        "3 hours",
-                                      ],
-                                      Array [
-                                        "720",
-                                        "12 hours",
-                                      ],
-                                      Array [
-                                        "1440",
-                                        "24 hours",
-                                      ],
-                                      Array [
-                                        "10080",
-                                        "one week",
-                                      ],
-                                      Array [
-                                        "43200",
-                                        "30 days",
-                                      ],
-                                    ]
-                                  }
-                                  className=""
+                                  clearable={false}
                                   disabled={false}
-                                  escapeMarkup={true}
-                                  hideErrorMessage={false}
                                   id="id-frequency"
-                                  multiple={false}
-                                  name="frequency"
                                   onChange={[Function]}
                                   options={
                                     Array [
@@ -3761,69 +3653,15 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       },
                                     ]
                                   }
-                                  placeholder="--"
                                   required={true}
-                                  style={
-                                    Object {
-                                      "marginBottom": 0,
-                                      "marginLeft": 5,
-                                      "marginRight": 5,
-                                      "width": 140,
-                                    }
-                                  }
                                   value={30}
                                 >
                                   <SelectPicker
-                                    allowClear={false}
-                                    allowEmpty={false}
                                     arrowRenderer={[Function]}
-                                    choices={
-                                      Array [
-                                        Array [
-                                          "5",
-                                          "5 minutes",
-                                        ],
-                                        Array [
-                                          "10",
-                                          "10 minutes",
-                                        ],
-                                        Array [
-                                          "30",
-                                          "30 minutes",
-                                        ],
-                                        Array [
-                                          "60",
-                                          "60 minutes",
-                                        ],
-                                        Array [
-                                          "180",
-                                          "3 hours",
-                                        ],
-                                        Array [
-                                          "720",
-                                          "12 hours",
-                                        ],
-                                        Array [
-                                          "1440",
-                                          "24 hours",
-                                        ],
-                                        Array [
-                                          "10080",
-                                          "one week",
-                                        ],
-                                        Array [
-                                          "43200",
-                                          "30 days",
-                                        ],
-                                      ]
-                                    }
                                     className="css-16280ey-StyledSelect eho28m20"
+                                    clearable={false}
                                     disabled={false}
-                                    escapeMarkup={true}
-                                    hideErrorMessage={false}
                                     id="id-frequency"
-                                    multiple={false}
-                                    name="frequency"
                                     onChange={[Function]}
                                     options={
                                       Array [
@@ -3865,78 +3703,25 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                         },
                                       ]
                                     }
-                                    placeholder="--"
                                     required={true}
-                                    style={
-                                      Object {
-                                        "marginBottom": 0,
-                                        "marginLeft": 5,
-                                        "marginRight": 5,
-                                        "width": 140,
-                                      }
-                                    }
                                     value={30}
                                   >
                                     <Select
-                                      allowClear={false}
-                                      allowEmpty={false}
                                       arrowRenderer={[Function]}
                                       autosize={true}
                                       backspaceRemoves={true}
                                       backspaceToRemoveMessage="Press backspace to remove {label}"
-                                      choices={
-                                        Array [
-                                          Array [
-                                            "5",
-                                            "5 minutes",
-                                          ],
-                                          Array [
-                                            "10",
-                                            "10 minutes",
-                                          ],
-                                          Array [
-                                            "30",
-                                            "30 minutes",
-                                          ],
-                                          Array [
-                                            "60",
-                                            "60 minutes",
-                                          ],
-                                          Array [
-                                            "180",
-                                            "3 hours",
-                                          ],
-                                          Array [
-                                            "720",
-                                            "12 hours",
-                                          ],
-                                          Array [
-                                            "1440",
-                                            "24 hours",
-                                          ],
-                                          Array [
-                                            "10080",
-                                            "one week",
-                                          ],
-                                          Array [
-                                            "43200",
-                                            "30 days",
-                                          ],
-                                        ]
-                                      }
                                       className="css-16280ey-StyledSelect eho28m20"
                                       clearAllText="Clear all"
                                       clearRenderer={[Function]}
                                       clearValueText="Clear value"
-                                      clearable={true}
+                                      clearable={false}
                                       closeOnSelect={true}
                                       deleteRemoves={true}
                                       delimiter=","
                                       disabled={false}
                                       escapeClearsValue={true}
-                                      escapeMarkup={true}
                                       filterOptions={[Function]}
-                                      hideErrorMessage={false}
                                       id="id-frequency"
                                       ignoreAccents={true}
                                       ignoreCase={true}
@@ -3949,8 +3734,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       menuBuffer={0}
                                       menuRenderer={[Function]}
                                       multi={false}
-                                      multiple={false}
-                                      name="frequency"
                                       noResultsText="No results found"
                                       onBlurResetsInput={true}
                                       onChange={[Function]}
@@ -3999,21 +3782,13 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                         ]
                                       }
                                       pageSize={5}
-                                      placeholder="--"
+                                      placeholder="Select..."
                                       removeSelected={true}
                                       required={true}
                                       rtl={false}
                                       scrollMenuIntoView={true}
                                       searchable={true}
                                       simpleValue={false}
-                                      style={
-                                        Object {
-                                          "marginBottom": 0,
-                                          "marginLeft": 5,
-                                          "marginRight": 5,
-                                          "width": 140,
-                                        }
-                                      }
                                       tabSelectsValue={true}
                                       trimFilter={true}
                                       value={30}
@@ -4021,15 +3796,8 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                       valueKey="value"
                                     >
                                       <div
-                                        className="Select css-16280ey-StyledSelect eho28m20 has-value is-clearable is-searchable Select--single"
+                                        className="Select css-16280ey-StyledSelect eho28m20 has-value is-searchable Select--single"
                                       >
-                                        <input
-                                          disabled={false}
-                                          key="hidden.0"
-                                          name="frequency"
-                                          type="hidden"
-                                          value="30"
-                                        />
                                         <div
                                           className="Select-control"
                                           onKeyDown={[Function]}
@@ -4037,25 +3805,17 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                           onTouchEnd={[Function]}
                                           onTouchMove={[Function]}
                                           onTouchStart={[Function]}
-                                          style={
-                                            Object {
-                                              "marginBottom": 0,
-                                              "marginLeft": 5,
-                                              "marginRight": 5,
-                                              "width": 140,
-                                            }
-                                          }
                                         >
                                           <span
                                             className="Select-multi-value-wrapper"
-                                            id="react-select-4--value"
+                                            id="react-select-6--value"
                                           >
                                             <Value
                                               disabled={false}
-                                              id="react-select-4--value-item"
-                                              instancePrefix="react-select-4-"
+                                              id="react-select-6--value-item"
+                                              instancePrefix="react-select-6-"
                                               onClick={null}
-                                              placeholder="--"
+                                              placeholder="Select..."
                                               value={
                                                 Object {
                                                   "label": "30 minutes",
@@ -4069,7 +3829,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                                 <span
                                                   aria-selected="true"
                                                   className="Select-value-label"
-                                                  id="react-select-4--value-item"
+                                                  id="react-select-6--value-item"
                                                   role="option"
                                                 >
                                                   30 minutes
@@ -4077,7 +3837,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                               </div>
                                             </Value>
                                             <AutosizeInput
-                                              aria-activedescendant="react-select-4--value"
+                                              aria-activedescendant="react-select-6--value"
                                               aria-expanded="false"
                                               aria-haspopup="false"
                                               aria-owns=""
@@ -4101,7 +3861,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                                 }
                                               >
                                                 <input
-                                                  aria-activedescendant="react-select-4--value"
+                                                  aria-activedescendant="react-select-6--value"
                                                   aria-expanded="false"
                                                   aria-haspopup="false"
                                                   aria-owns=""
@@ -4136,24 +3896,6 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                                             </AutosizeInput>
                                           </span>
                                           <span
-                                            aria-label="Clear value"
-                                            className="Select-clear-zone"
-                                            onMouseDown={[Function]}
-                                            onTouchEnd={[Function]}
-                                            onTouchMove={[Function]}
-                                            onTouchStart={[Function]}
-                                            title="Clear value"
-                                          >
-                                            <span
-                                              className="Select-clear"
-                                              dangerouslySetInnerHTML={
-                                                Object {
-                                                  "__html": "&times;",
-                                                }
-                                              }
-                                            />
-                                          </span>
-                                          <span
                                             className="Select-arrow-zone"
                                             onMouseDown={[Function]}
                                           >
@@ -4169,7 +3911,7 @@ exports[`ProjectAlertRuleDetails New alert rule renders 1`] = `
                               </SelectControl>
                             </div>
                           </div>
-                        </Select2Field>
+                        </SelectField>
                          for an issue.
                       </h6>
                     </AlertRuleRow>

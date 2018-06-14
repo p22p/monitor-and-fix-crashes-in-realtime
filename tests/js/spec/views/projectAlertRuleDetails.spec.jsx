@@ -5,6 +5,8 @@ import {browserHistory} from 'react-router';
 import ProjectAlertRuleDetails from 'app/views/settings/projectAlerts/projectAlertRuleDetails';
 import EnvironmentStore from 'app/stores/environmentStore';
 
+import {selectByValue} from '../../helpers/select';
+
 jest.mock('jquery');
 jest.unmock('app/utils/recreateRoute');
 
@@ -87,7 +89,7 @@ describe('ProjectAlertRuleDetails', function() {
     });
 
     it('sets defaults', function() {
-      let selects = wrapper.find('Select2Field Select');
+      let selects = wrapper.find('SelectField Select');
       expect(selects.first().props().value).toBe('all');
       expect(selects.last().props().value).toBe(30);
     });
@@ -153,11 +155,8 @@ describe('ProjectAlertRuleDetails', function() {
     });
 
     it('sends correct environment value', function() {
-      wrapper.find('Select2Field[name="environment"] Select').prop('onChange')(
-        'production'
-      );
-      wrapper.update();
-      expect(wrapper.find('Select2Field[name="environment"] Select').prop('value')).toBe(
+      selectByValue(wrapper, 'production', {name: 'environment'});
+      expect(wrapper.find('SelectField[name="environment"] Select').prop('value')).toBe(
         'production'
       );
       wrapper.find('form').simulate('submit');
@@ -170,11 +169,8 @@ describe('ProjectAlertRuleDetails', function() {
       );
     });
 
-    it('strips environment value if "All environments" is selected', function() {
-      wrapper.find('Select2Field[name="environment"] Select').prop('onChange')(
-        '__all_environments__'
-      );
-      wrapper.update();
+    it('strips environment value if "All environments" is selected', async function() {
+      selectByValue(wrapper, '__all_environments__', {name: 'environment'});
       wrapper.find('form').simulate('submit');
 
       expect(mock).toHaveBeenCalledWith(

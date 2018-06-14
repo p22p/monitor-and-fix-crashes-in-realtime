@@ -7,9 +7,16 @@ import SelectControl from 'app/components/forms/selectControl';
 export default class SelectField extends FormField {
   static propTypes = {
     ...FormField.propTypes,
-    options: PropTypes.array,
+    options: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.node,
+        value: PropTypes.any,
+      })
+    ),
+    choices: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.array])),
     onChange: PropTypes.func,
     clearable: PropTypes.bool,
+    creatable: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -27,11 +34,13 @@ export default class SelectField extends FormField {
   };
 
   getField() {
-    const {options, placeholder, disabled, required} = this.props;
+    const {options, creatable, choices, placeholder, disabled, required} = this.props;
 
     return (
       <SelectControl
+        creatable={creatable}
         id={this.getId()}
+        choices={choices}
         options={options}
         placeholder={placeholder}
         disabled={disabled}
