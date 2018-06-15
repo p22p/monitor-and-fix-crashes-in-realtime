@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 import createReactClass from 'create-react-class';
 import DateTime from 'app/components/dateTime';
 import TimeSince from 'app/components/timeSince';
@@ -7,7 +8,6 @@ import Version from 'app/components/version';
 import VersionHoverCard from 'app/components/versionHoverCard';
 import Tooltip from 'app/components/tooltip';
 import {defined, toTitleCase} from 'app/utils';
-import componentToString from 'app/utils/componentToString';
 import {t} from 'app/locale';
 
 const SeenInfo = createReactClass({
@@ -46,7 +46,7 @@ const SeenInfo = createReactClass({
   getTooltipTitle() {
     let {date, dateGlobal, environment, title} = this.props;
 
-    return componentToString(
+    return ReactDOMServer.renderToStaticMarkup(
       <div style={{width: 170}}>
         <div className="time-label">{title}</div>
         <dl className="flat">
