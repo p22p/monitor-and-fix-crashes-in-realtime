@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 import responses
 
-
 from mock import Mock
 from django.http import HttpRequest
 from time import time
