@@ -70,7 +70,6 @@ class ProjectForm(forms.Form):
 
 
 class VstsIntegration(Integration):
-
     def __init__(self, *args, **kwargs):
         super(VstsIntegration, self).__init__(*args, **kwargs)
         self.default_identity = None
